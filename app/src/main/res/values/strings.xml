@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Dictionary</string>
+    <string name="preferences_checkboxpref_title">Head service enabled</string>
+    <string name="preferences_checkboxpref_key">checkbox_preference</string>
+    <string name="default_checkbox_preference">preference_checkboxpref_default</string>
+    <string name="preferences_edittextpref_key">edittext_preference</string>
+    <string name="preferences_edittextpref_title">title_edittext_preference</string>
+    <string name="preferences_edittextpref_summary">preferences_edittext_summary</string>
+    <string name="preferences_edittextpref_dialog">dialog_title_edittext_preference</string>
+    <string name="preferences_prefcategory1_firstsection">preftitle_first_section</string>
+    <string name="preferences_prefcategory2_secondsection">title_second_section</string>
+    <string name="preferences_listpref_key">preferences_listpref_key</string>
+    <string name="preferences_listpref_title">title_list_preference</string>
+    <string name="preferences_listpref_dialog">dialog_title_list_preference</string>
+    <string name="preferences_pref_title">title_intent_preference</string>
+    <string name="preferences_checkboxpref_summary">It allows to enable or disable the head service.</string>
+
+</resources>

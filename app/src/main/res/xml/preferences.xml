@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:id = "@+id/preferences_prefcategory1"
+        android:title="@string/preferences_prefcategory1_firstsection">
+
+        <CheckBoxPreference
+            android:id="@+id/preferences_checkboxpref"
+            android:key="@string/preferences_checkboxpref_key"
+            android:title="@string/preferences_checkboxpref_title"
+            android:summary="@string/preferences_checkboxpref_summary"
+            android:defaultValue="@string/default_checkbox_preference"/>
+
+        <EditTextPreference
+            android:id="@+id/preferences_edittextpref"
+            android:key="@string/preferences_edittextpref_key"
+            android:title="@string/preferences_edittextpref_title"
+            android:summary="@string/preferences_edittextpref_summary"
+            android:dialogTitle="@string/preferences_edittextpref_dialog"
+            android:dependency="checkbox_preference" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:id="@+id/preferences_prefcategory2"
+        android:title="@string/preferences_prefcategory2_secondsection">
+
+        <ListPreference
+            android:id="@+id/preferences_listpref"
+            android:key="@string/preferences_listpref_key"
+            android:title="@string/preferences_listpref_title"
+            android:dialogTitle="@string/preferences_listpref_dialog"
+            android:entries="@array/preferences_listpref_entries"
+            android:entryValues="@array/preferences_listpref_entryvalues" />
+
+        <Preference
+            android:id="@+id/preferences_pref"
+            android:title="@string/preferences_pref_title">
+            <intent android:action="android.intent.action.VIEW"
+                android:data="http://codepath.com/" />
+        </Preference>
+
+    </PreferenceCategory>
+</PreferenceScreen>
